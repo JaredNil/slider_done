@@ -12,6 +12,10 @@ ibg();
 
 let swipe = new Swiper('.swiper',{
    direction: 'vertical',
+   mousewheel: {
+		// Чувствительность колеса мыши
+		sensitivity: 0.4,
+	},
    touchRatio: 0.7,
    touchAngle: 15,
    centeredSlidesBounds:'false',
