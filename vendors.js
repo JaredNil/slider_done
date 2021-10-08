@@ -12,6 +12,8 @@ ibg();
 
 let swipe = new Swiper('.swiper',{
    direction: 'vertical',
+   touchRatio: 0.7,
+   touchAngle: 15,
    centeredSlidesBounds:'false',
    pagination: {
     el: '.swiper-paginations',
@@ -128,4 +130,11 @@ function showSpoilerItem(){
 }
 
 
-
+let buttonOnSlide = document.getElementsByClassName('well__info__button');
+for (let btn2 of buttonOnSlide) {
+  btn2.addEventListener('click', function(){
+    swipe.slideNext(500, 1);
+    swipe.slideNext(500, 1);
+    swipe.slideNext(500, 1);
+  });
+}
