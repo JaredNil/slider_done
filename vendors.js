@@ -17,6 +17,9 @@ let swipe = new Swiper('.swiper',{
 		sensitivity: 0.4,
 	},
    touchRatio: 0.7,
+   keyboard: {
+    enabled: true,
+   },
    touchAngle: 15,
    centeredSlidesBounds:'false',
    pagination: {
